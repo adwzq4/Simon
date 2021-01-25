@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameViewFragment">-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/lightGrey"
+        tools:context=".GameViewFragment">
+<!--        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginVertical="10dp">-->
+    <TextView
+        android:id="@+id/highScoreView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/frijole"
+        android:gravity="center"
+        android:text="@string/high_score"
+        android:textColor="@color/black"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/currentScoreView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/frijole"
+        android:gravity="center"
+        android:text="@string/current_score"
+        android:textColor="#000000"
+        android:textSize="70sp" />
+
+        <!--</LinearLayout>-->
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="75dp"
+            android:background="@drawable/circle"
+            android:gravity="center">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/yellowButton"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/top_left"
+                    android:enabled="true" />
+                <Button
+                    android:id="@+id/greenButton"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/top_right"
+                    android:enabled="true" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/redButton"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/bottom_left"
+                    android:enabled="true" />
+                <Button
+                    android:id="@+id/blueButton"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/bottom_right"
+                    android:enabled="true" />
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:id="@+id/gameOverTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:fontFamily="@font/arbutus"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textColor="@color/highlightedRed"
+            android:layout_marginBottom="120dp"/>
+    </LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/mainGreetingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="50dp"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:text="@string/welcome_text"
+        android:textColor="@color/highlightedRed"
+        android:textSize="40sp"
+        android:fontFamily="@font/frijole"
+        app:layout_constraintBottom_toTopOf="@id/startButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238" />
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginEnd="162dp"
+        android:padding="10dp"
+        android:text="@string/start_button_label"
+        android:textSize="24dp"
+        android:background="@color/highlightedGreen"
+        app:layout_constraintBottom_toTopOf="@id/difficultyMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainGreetingView"
+        app:layout_constraintVertical_bias="0.378" />
+    <Button
+        android:id="@+id/highScoresButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/high_scores_button_label"
+        android:padding="10dp"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@id/soundSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/difficultyMenu"
+        android:background="@color/highlightedYellow"/>
+
+    <Switch
+        android:id="@+id/soundSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="20dp"
+        android:switchPadding="20dp"
+        android:text="@string/soundSwitchLabel"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/highScoresButton" />
+
+    <Spinner
+        android:id="@+id/difficultyMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/highScoresButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/difficultyLabel"
+        app:layout_constraintTop_toBottomOf="@id/startButton" />
+    <TextView
+        android:id="@+id/difficultyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/difficultyLabel"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="473dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/difficultyMenu"
+        app:layout_constraintBottom_toTopOf="@id/highScoresButton"
+        app:layout_constraintTop_toBottomOf="@id/startButton"
+        android:textColor="@color/black"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

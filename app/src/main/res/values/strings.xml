@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Simon</string>
+    <string name="current_score">%d</string>
+    <string name="high_score">High Score: %d</string>
+    <string name="last_score">Last Score: %d</string>
+    <string name="start_button_label">Start Game</string>
+    <string name="welcome_text">
+        "Simon says...    welcome to Simon!"</string>
+    <string name="high_scores_button_label">High Scores</string>
+    <string name="soundSwitchLabel">Sound</string>
+    <string name="difficultyLabel">Difficulty:</string>
+    <string name="scoreLabel">Score</string>
+    <string name="rankLabel">Rank</string>
+    <string name="dateLabel">Date</string>
+    <string name="gameOverText">GAME OVER</string>
+    <string name="start_new_game">Start New Game</string>
+    <string-array name="difficulty_array">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+</resources>

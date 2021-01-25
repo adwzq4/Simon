@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:name="quarter-circle"
+        android:pathData="M15,23 L23,23 A24,24 0 0,0 1,1 L1,9 A24,24 0 0,1 15,23"
+        android:strokeWidth="1"
+        android:strokeLineCap="round"
+        android:strokeColor="@color/green_button_state_colors"
+        android:fillColor="@color/green_button_state_colors"/>
+</vector>
